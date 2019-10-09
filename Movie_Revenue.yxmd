@@ -87,7 +87,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="654" />
+        <Position x="54" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -263,11 +263,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1290" y="306" />
+        <Position x="1326" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27740_713b7b0143884f6a9c8ba977ff413484_\Engine_14464_0e0fc39afb224326bcaf99805cc3effb_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_8948_ded4331425b149a3908c31bb3d0d2ee1_\Engine_14464_4118fd8bbe664efb9fb0ae2b6a092269_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -291,11 +291,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="27">
       <GuiSettings>
-        <Position x="846" y="306" />
+        <Position x="942" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"name","pay","title","url","revenue","genre","metascore","rating","amount","average_rating","name_id","full_name"</Value>
+          <Value name="List Box (11)">"name","pay","title","url","revenue","genre","metascore","rating","average_rating","name_id","full_name"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -312,12 +312,15 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1134" y="294" />
+        <Position x="1230" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -369,7 +372,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="942" y="306" />
+        <Position x="1038" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -402,7 +405,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="210" y="642" />
+        <Position x="210" y="690" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -436,7 +439,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="558" y="498" />
+        <Position x="654" y="498" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -468,7 +471,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="654" y="498" />
+        <Position x="750" y="498" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -487,7 +490,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="750" y="294" />
+        <Position x="846" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -502,6 +505,8 @@ Table=`Sheet1$`</DefaultAnnotationText>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
+                <SelectField field="Right_revenue" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="Right_metascore" selected="True" input="Right_" type="Int64" size="8" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -517,11 +522,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="750" y="498" />
+        <Position x="846" y="498" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27740_713b7b0143884f6a9c8ba977ff413484_\Engine_14464_12a3741a9b204947b91bb25d414a32c5_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_8948_ded4331425b149a3908c31bb3d0d2ee1_\Engine_14464_d142332436d146128d77e60f2841bb04_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -545,7 +550,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1266" y="366" />
+        <Position x="1326" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -596,7 +601,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="40">
       <GuiSettings>
-        <Position x="366" y="570" />
+        <Position x="366" y="618" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -662,7 +667,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="270" y="474" />
+        <Position x="366" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -682,7 +687,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="366" y="474" />
+        <Position x="462" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -701,7 +706,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="45">
       <GuiSettings>
-        <Position x="462" y="474" />
+        <Position x="558" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -727,7 +732,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="46">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1038" y="294" />
+        <Position x="1134" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -751,6 +756,25 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="270" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([metascore], ' Metascore', '')" field="metascore" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[metascore = REGEX_Replace([metascore], ' Metascore', '')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
   </Nodes>
   <Connections>
@@ -860,7 +884,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="39" Connection="Output" />
-      <Destination ToolID="43" Connection="Input" />
+      <Destination ToolID="47" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="40" Connection="Output26" />
@@ -885,6 +909,10 @@ Table=`Sheet1$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="46" Connection="Output" />
       <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
