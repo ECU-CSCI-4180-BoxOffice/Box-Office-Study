@@ -87,7 +87,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="702" />
+        <Position x="54" y="498" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -263,11 +263,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1326" y="306" />
+        <Position x="1650" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_8948_ded4331425b149a3908c31bb3d0d2ee1_\Engine_14464_4118fd8bbe664efb9fb0ae2b6a092269_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_6028_7de7e9e976eb41d7a0d4a7d2a46b07af_\Engine_14464_d67b19da462741bdb06c98a450ddc39d_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -291,11 +291,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="27">
       <GuiSettings>
-        <Position x="942" y="306" />
+        <Position x="1254" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"name","pay","title","url","revenue","genre","metascore","rating","average_rating","name_id","full_name"</Value>
+          <Value name="List Box (11)">"name","pay","title","release_date","average_rating","name_id","full_name","revenue"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -320,7 +320,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1230" y="294" />
+        <Position x="1554" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -372,7 +372,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1038" y="306" />
+        <Position x="1338" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -405,7 +405,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="210" y="690" />
+        <Position x="210" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -417,7 +417,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
             <SelectField field="title" selected="True" />
             <SelectField field="original_title" selected="False" />
             <SelectField field="is_adult" selected="False" />
-            <SelectField field="release_date" selected="False" />
+            <SelectField field="release_date" selected="True" />
             <SelectField field="genres" selected="False" />
             <SelectField field="average_rating" selected="True" />
             <SelectField field="vote_count" selected="False" />
@@ -437,60 +437,9 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="33">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="654" y="498" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="title" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="title" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Right_title" selected="False" rename="Right_title" input="Right_" />
-                <SelectField field="Left_amount" selected="True" input="Left_" type="Int32" size="4" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="34">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="750" y="498" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <ByName_ErrorMode>Warning</ByName_ErrorMode>
-          <ByName_OutputMode>All</ByName_OutputMode>
-          <Mode>ByName</Mode>
-          <SetOutputOrder value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
-    </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="846" y="294" />
+        <Position x="990" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -505,9 +454,16 @@ Table=`Sheet1$`</DefaultAnnotationText>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
+                <SelectField field="Left_name" selected="True" input="Left_" />
+                <SelectField field="Left_pay" selected="True" input="Left_" />
+                <SelectField field="Right_title" selected="True" input="Right_" />
+                <SelectField field="Right_release_date" selected="True" input="Right_" type="Int16" size="2" />
+                <SelectField field="Right_average_rating" selected="True" input="Right_" />
+                <SelectField field="Right_name_id" selected="True" input="Right_" />
+                <SelectField field="Right_full_name" selected="True" input="Right_" />
                 <SelectField field="Right_revenue" selected="True" input="Right_" type="Int64" size="8" />
-                <SelectField field="Right_metascore" selected="True" input="Right_" type="Int64" size="8" />
-                <SelectField field="*Unknown" selected="True" />
+                <SelectField field="Right_metascore" selected="False" input="Right_" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
           </SelectConfiguration>
@@ -522,11 +478,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="846" y="498" />
+        <Position x="846" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_8948_ded4331425b149a3908c31bb3d0d2ee1_\Engine_14464_d142332436d146128d77e60f2841bb04_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_6028_7de7e9e976eb41d7a0d4a7d2a46b07af_\Engine_14464_36802b59e4ea42b19e0f48e625b17e4f_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -550,11 +506,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1326" y="366" />
+        <Position x="1650" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="42" MaxRecords="">output/movie_revenue.tde</File>
+          <File FileFormat="64" MaxRecords="">output/movie_revenue.hyper</File>
           <Passwords />
           <FormatSpecificOptions>
             <OutputOption>Overwrite</OutputOption>
@@ -563,45 +519,18 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>movie_revenue.tde</DefaultAnnotationText>
+          <DefaultAnnotationText>movie_revenue.hyper</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
-    <Node ToolID="39">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="174" y="510" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="Movies_name" selected="True" rename="title" />
-            <SelectField field="Movies_url" selected="True" rename="url" />
-            <SelectField field="Movies_Amount" selected="True" rename="revenue" />
-            <SelectField field="Movies_Genre" selected="True" rename="genre" />
-            <SelectField field="Movies_Metascore" selected="True" rename="metascore" />
-            <SelectField field="Movies_Rating" selected="True" rename="rating" />
-            <SelectField field="Ranking" selected="False" rename="ranking" />
-            <SelectField field="Title" selected="False" rename="title" />
-            <SelectField field="Year of release" selected="False" rename="release_date" />
-            <SelectField field="Sales" selected="False" rename="sales" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
     <Node ToolID="40">
       <GuiSettings>
-        <Position x="366" y="618" />
+        <Position x="366" y="414" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -613,7 +542,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <Value name="Check Box (122)">False</Value>
           <Value name="Check Box (53)">False</Value>
           <Value name="Check Box (58)">False</Value>
-          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (70)">True</Value>
           <Value name="Check Box (77)">False</Value>
           <Value name="Drop Down (81)">upper</Value>
         </Configuration>
@@ -622,17 +551,44 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
-    <Node ToolID="41">
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1458" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="average_rating" action="First" rename="rating" />
+            <SummarizeField field="full_name" action="First" rename="full_name" />
+            <SummarizeField field="name" action="GroupBy" rename="name" />
+            <SummarizeField field="name_id" action="First" rename="name_id" />
+            <SummarizeField field="pay" action="First" rename="pay" />
+            <SummarizeField field="revenue" action="First" rename="revenue" />
+            <SummarizeField field="title" action="GroupBy" rename="title" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="48">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="522" />
+        <Position x="54" y="642" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">data\imdbTop250.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">data\mojo_revenue_data.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -646,7 +602,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>imdbTop250.csv</DefaultAnnotationText>
+          <DefaultAnnotationText>mojo_revenue_data.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <Dependencies>
@@ -654,45 +610,80 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Movies_name" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_url" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Amount" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Genre" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Metascore" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Rating" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_name" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\mojo_revenue_data.csv" type="V_WString" />
+            <Field name="Movies_url" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\mojo_revenue_data.csv" type="V_WString" />
+            <Field name="Movies_WorldWide" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\mojo_revenue_data.csv" type="V_WString" />
+            <Field name="Movies_Domestic" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\mojo_revenue_data.csv" type="V_WString" />
+            <Field name="Movies_Overseas" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\mojo_revenue_data.csv" type="V_WString" />
+            <Field name="Movies_Year" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\mojo_revenue_data.csv" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
-    <Node ToolID="43">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="366" y="474" />
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="642" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <FormulaFields>
-            <FormulaField expression="REGEX_Replace([revenue], '^[^0-9.]', '')&#xA;" field="revenue" size="254" type="V_String" />
-          </FormulaFields>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Movies_name" selected="True" rename="title" />
+            <SelectField field="Movies_url" selected="False" rename="url" />
+            <SelectField field="Movies_WorldWide" selected="True" rename="revenue" />
+            <SelectField field="Movies_Domestic" selected="False" />
+            <SelectField field="Movies_Overseas" selected="False" />
+            <SelectField field="Movies_Year" selected="True" rename="release_date" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[revenue = REGEX_Replace([revenue], '^[^0-9.]', '')
-
-]]></DefaultAnnotationText>
+          <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="44">
+    <Node ToolID="50">
+      <GuiSettings>
+        <Position x="342" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"revenue","release_date"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">True</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="51">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="462" y="474" />
+        <Position x="438" y="642" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="ToNumber([revenue]) * 1000000" field="revenue" size="254" type="V_String" />
+            <FormulaField expression="ToNumber([revenue]) * 1000000" field="revenue" size="254" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -704,13 +695,72 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
-    <Node ToolID="45">
-      <GuiSettings>
-        <Position x="558" y="474" />
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="618" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="title" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="title" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_title" selected="True" input="Left_" />
+                <SelectField field="Left_release_date" selected="True" input="Left_" />
+                <SelectField field="Left_average_rating" selected="True" input="Left_" />
+                <SelectField field="Left_name_id" selected="True" input="Left_" />
+                <SelectField field="Left_full_name" selected="True" input="Left_" />
+                <SelectField field="Right_title" selected="False" rename="Right_title" input="Right_" />
+                <SelectField field="Right_revenue" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="Right_release_date" selected="False" rename="Right_release_date" input="Right_" />
+                <SelectField field="Left_revenue" selected="False" input="Left_" type="Int64" size="8" />
+                <SelectField field="Left_metascore" selected="False" input="Left_" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="738" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"title","url","revenue","genre","metascore","rating"</Value>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings>
+        <Position x="246" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"title"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -718,7 +768,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <Value name="Check Box (122)">False</Value>
           <Value name="Check Box (53)">False</Value>
           <Value name="Check Box (58)">False</Value>
-          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (70)">True</Value>
           <Value name="Check Box (77)">False</Value>
           <Value name="Drop Down (81)">upper</Value>
         </Configuration>
@@ -727,26 +777,46 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
-    <Node ToolID="46">
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1158" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="59">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1134" y="294" />
+        <Position x="1458" y="462" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SummarizeFields>
-            <SummarizeField field="average_rating" action="First" rename="rating" />
-            <SummarizeField field="full_name" action="First" rename="full_name" />
-            <SummarizeField field="genre" action="First" rename="genre" />
-            <SummarizeField field="metascore" action="First" rename="metascore" />
-            <SummarizeField field="name" action="GroupBy" rename="name" />
-            <SummarizeField field="name_id" action="First" rename="name_id" />
+            <SummarizeField field="name" action="First" rename="name" />
             <SummarizeField field="pay" action="First" rename="pay" />
-            <SummarizeField field="revenue" action="First" rename="revenue" />
             <SummarizeField field="title" action="GroupBy" rename="title" />
-            <SummarizeField field="url" action="First" rename="url" />
+            <SummarizeField field="release_date" action="First" rename="release_date" />
+            <SummarizeField field="average_rating" action="First" rename="rating" />
+            <SummarizeField field="name_id" action="First" rename="name_id" />
+            <SummarizeField field="full_name" action="First" rename="full_name" />
+            <SummarizeField field="revenue" action="First" rename="revenue" />
           </SummarizeFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -757,24 +827,47 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
     </Node>
-    <Node ToolID="47">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="270" y="474" />
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1554" y="462" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <FormulaFields>
-            <FormulaField expression="REGEX_Replace([metascore], ' Metascore', '')" field="metascore" size="254" type="V_String" />
-          </FormulaFields>
+          <SortInfo locale="0">
+            <Field field="revenue" order="Descending" />
+          </SortInfo>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[metascore = REGEX_Replace([metascore], ' Metascore', '')
-]]></DefaultAnnotationText>
+          <DefaultAnnotationText>revenue - Descending</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1650" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="64" MaxRecords="">output/movie_revenue_no_big_name.hyper</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movie_revenue_no_big_name.hyper</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
   </Nodes>
   <Connections>
@@ -827,7 +920,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       <Destination ToolID="35" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="34" Connection="Output" />
+      <Origin ToolID="54" Connection="Output" />
       <Destination ToolID="35" Connection="Right" />
     </Connection>
     <Connection>
@@ -859,60 +952,76 @@ Table=`Sheet1$`</DefaultAnnotationText>
       <Destination ToolID="46" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="29" Connection="False" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="32" Connection="Output" />
       <Destination ToolID="40" Connection="Input2" />
     </Connection>
     <Connection name="#1">
-      <Origin ToolID="33" Connection="Join" />
-      <Destination ToolID="34" Connection="Input" />
+      <Origin ToolID="35" Connection="Join" />
+      <Destination ToolID="56" Connection="Input" />
     </Connection>
     <Connection name="#2">
-      <Origin ToolID="33" Connection="Right" />
-      <Destination ToolID="34" Connection="Input" />
-    </Connection>
-    <Connection name="#3">
-      <Origin ToolID="33" Connection="Left" />
-      <Destination ToolID="34" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="34" Connection="Output" />
-      <Destination ToolID="36" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="35" Connection="Join" />
-      <Destination ToolID="27" Connection="Input2" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="39" Connection="Output" />
-      <Destination ToolID="47" Connection="Input" />
+      <Origin ToolID="35" Connection="Right" />
+      <Destination ToolID="56" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="40" Connection="Output26" />
-      <Destination ToolID="33" Connection="Right" />
+      <Destination ToolID="52" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="45" Connection="Output26" />
-      <Destination ToolID="33" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="41" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="43" Connection="Output" />
-      <Destination ToolID="44" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="44" Connection="Output" />
-      <Destination ToolID="45" Connection="Input2" />
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="46" Connection="Output" />
       <Destination ToolID="28" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="47" Connection="Output" />
-      <Destination ToolID="43" Connection="Input" />
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="55" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output26" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="52" Connection="Left" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="52" Connection="Join" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="52" Connection="Right" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output26" />
+      <Destination ToolID="50" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="27" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

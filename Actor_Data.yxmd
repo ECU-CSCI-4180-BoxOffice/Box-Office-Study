@@ -448,7 +448,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="42" MaxRecords="">output/actor_data.tde</File>
+          <File FileFormat="64" MaxRecords="">output/actor_data.hyper</File>
           <Passwords />
           <FormatSpecificOptions>
             <OutputOption>Overwrite</OutputOption>
@@ -457,9 +457,12 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>actor_data.tde</DefaultAnnotationText>
+          <DefaultAnnotationText>actor_data.hyper</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
