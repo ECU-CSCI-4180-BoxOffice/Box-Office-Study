@@ -20,13 +20,10 @@
 Table=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Name" size="255" source="File: D:\School\University\CSCI 4180\data\cnbc_top_paid_actors.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="Pay" source="File: D:\School\University\CSCI 4180\data\cnbc_top_paid_actors.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Name" size="255" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\cnbc_top_paid_actors.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Pay" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\cnbc_top_paid_actors.xlsx|||`Sheet1$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -51,13 +48,10 @@ Table=`Sheet1$`</DefaultAnnotationText>
 Table=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Name" size="255" source="File: D:\School\University\CSCI 4180\data\irishtimes_top_10_actors.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="Pay" source="File: D:\School\University\CSCI 4180\data\irishtimes_top_10_actors.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Name" size="255" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\irishtimes_top_10_actors.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Pay" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\irishtimes_top_10_actors.xlsx|||`Sheet1$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -82,13 +76,10 @@ Table=`Sheet1$`</DefaultAnnotationText>
 Table=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Name" size="255" source="File: D:\School\University\CSCI 4180\data\wikipedia_top_paid_actors.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="Total Salary" source="File: D:\School\University\CSCI 4180\data\wikipedia_top_paid_actors.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Name" size="255" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\wikipedia_top_paid_actors.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Total Salary" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\wikipedia_top_paid_actors.xlsx|||`Sheet1$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -109,9 +100,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText>actor_data.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field description="The movie's id" name="movie_id" size="254" source="File: D:\School\University\CSCI 4180\data\title.basics.tsv" type="V_String" />
@@ -279,7 +267,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_12264_14c1fc25eac34110a625c7722db0cb55_\Engine_19384_ccff6cb0db8a42da884d563422da26a0_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27740_713b7b0143884f6a9c8ba977ff413484_\Engine_14464_0e0fc39afb224326bcaf99805cc3effb_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -324,9 +312,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
@@ -536,7 +521,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_12264_14c1fc25eac34110a625c7722db0cb55_\Engine_19384_1b5192e0a3de4b67b0f0d18dc2a8450f_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27740_713b7b0143884f6a9c8ba977ff413484_\Engine_14464_12a3741a9b204947b91bb25d414a32c5_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -576,9 +561,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText>movie_revenue.tde</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -635,9 +617,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
@@ -648,7 +627,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">D:\School\University\CSCI 4180\data\imdbTop250.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">data\imdbTop250.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -670,12 +649,12 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Movies_name" size="254" source="File: D:\School\University\CSCI 4180\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_url" size="254" source="File: D:\School\University\CSCI 4180\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Amount" size="254" source="File: D:\School\University\CSCI 4180\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Genre" size="254" source="File: D:\School\University\CSCI 4180\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Metascore" size="254" source="File: D:\School\University\CSCI 4180\data\imdbTop250.csv" type="V_String" />
-            <Field name="Movies_Rating" size="254" source="File: D:\School\University\CSCI 4180\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_name" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_url" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_Amount" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_Genre" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_Metascore" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
+            <Field name="Movies_Rating" size="254" source="File: D:\School\University\CSCI 4180\Box Office Study Project\data\imdbTop250.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -743,9 +722,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
