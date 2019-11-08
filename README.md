@@ -2,7 +2,7 @@
 This is our data science project on finding out if hiring "big name actors" results in having a higher grossing movie.
 
 ## Hypothesis
-We think that “big name actors” are correlated with more sales in the box office. This Alteryx project is going to help us find out.
+We want to find out which genre will lead to the most revenue, and any significant outliers which are pushing a specific genre.
 
 ## How to use
 Make sure to add the necessary data files to the "data" folder.

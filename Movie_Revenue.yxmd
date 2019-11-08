@@ -267,7 +267,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27176_b08dce8db23d4e18859377b85fa69bdf_\Engine_14464_2297daf62e854882a19d431da324cef2_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_18728_f0461ff1b524453a8bf2012d29c0e79a_\Engine_14464_797a8bfa5a0d490e92fa52bd3ebe5b82_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -295,7 +295,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"name","pay","title","release_date","average_rating","name_id","full_name","revenue"</Value>
+          <Value name="List Box (11)">"pay","title","release_date","average_rating","name_id","full_name","revenue"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -482,7 +482,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27176_b08dce8db23d4e18859377b85fa69bdf_\Engine_14464_1b08b630e40746338d40763037580a02_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_18728_f0461ff1b524453a8bf2012d29c0e79a_\Engine_14464_13e7ed72d4964a4ea37a3e2b4c41a9b9_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -789,11 +789,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <SelectFields>
             <SelectField field="pay" selected="True" />
             <SelectField field="title" selected="True" />
-            <SelectField field="release_date" selected="True" type="Int16" size="2" />
+            <SelectField field="release_date" selected="True" />
             <SelectField field="average_rating" selected="True" />
             <SelectField field="name_id" selected="True" />
             <SelectField field="full_name" selected="True" />
-            <SelectField field="revenue" selected="True" type="Int64" size="8" />
+            <SelectField field="revenue" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -830,7 +830,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_27176_b08dce8db23d4e18859377b85fa69bdf_\Engine_14464_40975ae672254cf29fccd9bd303debaf_.yxdb</TempFile>
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_18728_f0461ff1b524453a8bf2012d29c0e79a_\Engine_14464_bb1ddd9b52cb48e5a908fdb10c4a9225_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -877,7 +877,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile />
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_18728_f0461ff1b524453a8bf2012d29c0e79a_\Engine_14464_31b32c1cf5654014b288ab1ab0bbe3bc_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1055,7 +1055,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile />
+          <TempFile>C:\Users\navid\AppData\Local\Temp\Engine_18728_f0461ff1b524453a8bf2012d29c0e79a_\Engine_14464_55cd2a7cacaa4671a4ff0371b0e96ac7_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
